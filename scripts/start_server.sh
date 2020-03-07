@@ -1,2 +1,2 @@
 #!/bin/bash
-service httpd start
+python -m SimpleHTTPServer 8000 &
