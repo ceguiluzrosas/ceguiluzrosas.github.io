@@ -1,2 +1,6 @@
 #!/bin/bash
-python -m http.server 8000
+
+set -e
+set -x
+
+sudo -u start.sh
