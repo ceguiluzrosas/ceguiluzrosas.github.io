@@ -1,2 +1,2 @@
 #!/bin/bash
-service httpd start
+python -m http.server 8000
