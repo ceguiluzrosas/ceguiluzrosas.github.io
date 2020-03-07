@@ -4,6 +4,10 @@ files:
   - source: /
     destination: /home/project
 hooks:
+  ApplicationStop:
+    - location: scripts/stop_server.sh
+      timeout: 30
+      runas: root
    BeforeInstall:
     - location: scripts/install_dependencies.sh
       timeout: 60
