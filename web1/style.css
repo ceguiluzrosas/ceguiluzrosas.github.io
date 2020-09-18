@@ -25,9 +25,19 @@
     width: 80%;
 }
 .proto-img{
-    width: 350px
+    width: 300px;
 }
 
-/* .center-me {
-    text-align: center;
-} */
+.big-proto-img {
+    width: 400px;
+}
+
+.caption {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quote {
+    padding-left: 15px;
+    padding-right: 15px;
+}
