@@ -1,0 +1,33 @@
+#top{
+      /*padding: 2%;*/
+      padding-top: 30;
+      text-align: left;
+      font-size: 40; 
+      font-family: 'Jost', sans-serif;
+}
+.subitletop{
+    /*padding: 2%;*/
+    text-align: left;
+    font-size: 30; 
+    font-family: 'Jost', sans-serif;
+}
+.subheading{
+    text-align: left;
+    font-size: 20; 
+    font-family: 'Montserrat', sans-serif;
+}
+.divider{
+    text-align: left;
+    font-size: 15; 
+    font-family: 'Jost', sans-serif;
+}
+#title-img{
+    width: 80%;
+}
+.proto-img{
+    width: 350px
+}
+
+/* .center-me {
+    text-align: center;
+} */
