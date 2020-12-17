@@ -6,6 +6,15 @@
     width: 80%;
 }
 
+.process-img {
+    width: 80%;
+}
+
+#tall-table-img {
+    height: 25em;
+    width: 25em;
+}
+
 .carousel-indicators li {
     border-color: black;
     background-color: white;

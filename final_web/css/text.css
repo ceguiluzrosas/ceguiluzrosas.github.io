@@ -30,3 +30,12 @@ mark {
 .bold {
     font-weight: bolder;
 }
+
+.process-img-caption {
+    font-size: x-small;
+}
+
+.process-caption-div {
+    padding-left: 5%;
+    padding-right: 5%;
+}
