@@ -1,0 +1,17 @@
+.summary-slideshow-img {
+    width: 65%;
+}
+
+.process-slideshow-img {
+    width: 80%;
+}
+
+.carousel-indicators li {
+    border-color: black;
+    background-color: white;
+}
+
+.carousel-indicators .active{
+    border-color: black;
+    background-color: gold;
+}

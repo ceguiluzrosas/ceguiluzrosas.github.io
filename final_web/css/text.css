@@ -1,0 +1,32 @@
+body {
+    font-family: 'Piazzolla', serif;
+}
+
+mark {
+    background: #ffff0160;
+}
+
+.body-title {
+    font-size: x-large;
+}
+
+.body-subtitle {
+    font-size: medium;
+}
+
+.body-header {
+    font-size: large;
+}
+
+.body-summary {
+    font-size: medium;
+}
+
+.slideshow-text {
+    font-size: small;
+    background: black;
+}
+
+.bold {
+    font-weight: bolder;
+}
