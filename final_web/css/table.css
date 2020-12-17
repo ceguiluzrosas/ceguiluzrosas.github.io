@@ -1,0 +1,21 @@
+.themes-table td, #themes-table th {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+.themes-table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.themes-table tr:hover {
+    background-color: #ddd;
+}
+
+.themes-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: gold;
+    color: black;
+    border: 1px solid black;
+}

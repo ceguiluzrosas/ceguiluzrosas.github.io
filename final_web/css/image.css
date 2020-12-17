@@ -1,9 +1,17 @@
+#summary-img{
+    width: 40em;
+}
+
 .summary-slideshow-img {
     width: 65%;
 }
 
 .process-slideshow-img {
     width: 80%;
+}
+
+.gslide-table-img {
+    width: 95%;
 }
 
 .process-img {
