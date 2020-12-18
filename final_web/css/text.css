@@ -49,3 +49,7 @@ caption {
 .pit-qs {
     background-color: aqua;
 }
+
+.text-justify {
+    text-align: justify;
+}
