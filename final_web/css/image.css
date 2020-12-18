@@ -1,5 +1,5 @@
 #summary-img{
-    width: 40em;
+    width: 100%;
 }
 
 .summary-slideshow-img {
@@ -19,8 +19,8 @@
 }
 
 #tall-table-img {
-    height: 25em;
-    width: 25em;
+    height: auto;
+    width: 100%;
 }
 
 .carousel-indicators li {
@@ -31,4 +31,19 @@
 .carousel-indicators .active{
     border-color: black;
     background-color: gold;
+}
+
+.idea-dia {
+    height: auto;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.gif {
+    border: 1px solid black;
+}
+
+.double-proto {
+    width: 100%;
+    height: auto;
 }

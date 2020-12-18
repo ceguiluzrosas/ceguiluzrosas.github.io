@@ -1,5 +1,6 @@
 body {
     font-family: 'Piazzolla', serif;
+    line-height: 1.8;
 }
 
 mark {
@@ -35,9 +36,14 @@ mark {
     font-size: x-small;
 }
 
+caption {
+    line-height: 1.25;
+}
+
 .process-caption-div {
     padding-left: 5%;
     padding-right: 5%;
+    line-height: 1.5;
 }
 
 .pit-qs {

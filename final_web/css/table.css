@@ -1,6 +1,7 @@
 .themes-table td, #themes-table th {
     border: 1px solid black;
     padding: 8px;
+    vertical-align: top;
   }
   
 .themes-table tr:nth-child(even){
@@ -18,4 +19,13 @@
     background-color: gold;
     color: black;
     border: 1px solid black;
+}
+
+.smaller-table {
+    font-size: small;
+}
+
+.smaller-table caption {
+    padding-left: 5%;
+    padding-right: 5%;
 }
