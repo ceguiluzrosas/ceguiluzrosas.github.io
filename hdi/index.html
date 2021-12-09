@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="src/css/subset.css">
+    </head>
+    <body>
+        <div class="">
+            <div class="container text-center">
+                <h1>Lifelog Video Frame Query</h1>
+                <span>by Carlos Rosas and YY Teng</span>
+            </div>
+            <hr>
+            <div class="">
+                <div class="row">
+                    <div class="col queryCol">
+                        <div class="container">
+                            <div class="test-container">
+                                <h2>Tests</h2>
+                                <div>
+                                    <input type="radio" checked="true"; id="beach"> <label for="beach">Test #1</label>
+                                    <input type="radio" id="central_park"> <label for="central_park">Test #2</label>
+                                    <input type="radio" id="times_square"> <label for="times_square">Test #3</label>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="" download="data.json" id="download">Download Data</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <h2>Query</h2>
+                            <div id="query-container">
+                                <div class="dropdown">
+                                    <div id="label1Dropdown" class="dropdown-content">
+                                        <label for="label1">Label 1: </label>
+                                        <input type="text" placeholder="Search.." class="searchInput" id="label1Input" >
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="dropdown">
+                                    <div id="temporalRelationDropdown" class="dropdown-content">
+                                        <label for="temporalRelation">Temporal Relation: </label>
+                                        <input type="text" placeholder="Search.." class="searchInput" id="temporalRelationInput" >
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="dropdown">
+                                    <div id="spatialRelationDropdown" class="dropdown-content">
+                                        <label for="spatialRelation">Spatial Relation: </label>
+                                        <input type="text" placeholder="Search.." class="searchInput" id="spatialRelationInput" >
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="dropdown">
+                                    <div id="label2Dropdown" class="dropdown-content">
+                                        <label for="label2">Label 2: </label>
+                                        <input type="text" placeholder="Search.." class="searchInput" id="label2Input" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="regularSearch" type="submit" name="submit">Search</button>
+                                <button id="subSearch" type="submit" name="submit">Inner Search</button>
+                                <button id="resetSearch" type="submit" name="submit">Reset</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="rate" class="container">
+                            <h2>Rate</h2>
+                            <div class="rateContainer">
+                                <span class="rateHeader">Comprehensibility: </span>
+                                <input id="compRate" type="range" min="1" max="5" value="3" step="1" list=compTicks>
+                                <datalist id=compTicks>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </datalist>
+                            </div>
+                            <div class="rateContainer">
+                                <span class="rateHeader">Significance: </span>
+                                <input id="sigRate" type="range" min="1" max="5" value="3" step="1" list=sigTicks>
+                                <datalist id=sigTicks>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </datalist>
+                            </div>
+                            <div class="rateContainer">
+                                <span class="rateHeader">Enjoyability: </span>
+                                <input id="enjoyRate" type="range" min="1" max="5" value="3" step="1" list=enjoyTicks>
+                                <datalist id=enjoyTicks>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </datalist>
+                            </div>
+                            <div>
+                                <button id="rateSubmit" type="submit" name="submit">Submit</button>
+                            </div>
+                        </div>
+                        <!-- <hr>
+                        <h3>Selected Frames</h3>
+                        <div id="subsetImages" class="grid-container"></div> -->
+                    </div>
+                    <div class="col">
+                        <div class="">
+                            <h3>Saved Frames</h3>
+                            <div id="savedImages" class="grid-container"></div> 
+                            <hr>
+                            <h3>Selected Frames</h3>
+                            <div id="subsetImages" class="grid-container"></div> 
+                            <hr>
+                            <h3>Images</h3>
+                            <div class="" id="images"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <body>
+    <script type="text/javascript" src="src/js/modeToggler.js"></script>
+    <script type="text/javascript" src="src/js/imageQuery.js"></script>
+    <script type="text/javascript" src="src/js/subset.js"></script>
+    <script type="text/javascript" src="src/js/rateQuery.js"></script>
+    <script type="text/javascript" src="src/js/saveImages.js"></script>
+    <script type="text/javascript" src="src/js/listeners.js"></script>
+</html>
