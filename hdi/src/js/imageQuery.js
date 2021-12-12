@@ -178,12 +178,12 @@ class ImageQuery {
         let times_square = ['cup', 'bench', 'umbrella', 'kite', 'banana', 'suitcase', 'car', 'diningtable', 'laptop', 'bus', 'teddy bear', 'toothbrush', 'horse', 'pottedplant', 'traffic light', 'backpack', 'person', 'handbag', 'cell phone', 'tvmonitor', 'bicycle', 'chair', 'bottle', 'truck', 'tie', 'motorbike'],
             beach = ['frisbee', 'bottle', 'horse', 'backpack', 'suitcase', 'person', 'umbrella', 'chair', 'kite', 'handbag', 'boat', 'cup', 'bench', 'car', 'surfboard'],
             central_park = ['person', 'motorbike', 'elephant', 'backpack', 'skateboard', 'handbag', 'stop sign', 'bench', 'cow', 'zebra', 'remote', 'cell phone', 'bicycle'];
-        let TR_times_squre = [],
+        let TR_times_squre = ['parked', 'lookingDown', 'sitting', 'parking', 'standing', 'turning', 'walking', 'pointing', 'holding', 'takingPhoto', 'riding', 'passing', 'bendingOver', 'raisingHands', 'eating', 'talking', 'strolling'],
             TR_beach = ['smoking', 'laying', 'dancing', 'playing', 'standing', 'kneeling', 'crawling', 'bendingOver', 'sitting', 'talking', 'walking', 'jogging', 'running'],
-            TR_central_park = [];
-        let SR_times_squre = [],
+            TR_central_park = ['sitting', 'walking', 'strolling', 'running', 'looking', 'standing'];
+        let SR_times_squre = ['group', 'center', 'nextTo', 'together', 'inBetween', 'inFront', 'facing', 'line', 'leftOf', 'cluster', 'rightOf', 'behind', 'along', 'alone', 'underneath'],
             SR_beach = ['leftOf', 'nextTo', 'left', 'line', 'rightOf', 'center', 'circle', 'around', 'cluster', 'along', 'alone'],
-            SR_central_park = [];
+            SR_central_park = ['leftOf', 'behind', 'alone', 'underneath', 'inFrontOf', 'together', 'nextTo', 'rightOf', 'sideOf', 'center', 'cluster'];
         
         switch (this.mode) {
             case "beach":
